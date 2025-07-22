@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Innovative Hangman</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🪢 Hangman: Cartoon Edition</h1>
+
+    <div class="hangman-scene">
+      <div class="gallows">
+        <div class="beam"></div>
+        <div class="rope"></div>
+      </div>
+      <div class="human" id="human">
+        <div id="head" class="part head"></div>
+        <div id="body" class="part body"></div>
+        <div id="arm-left" class="part arm left"></div>
+        <div id="arm-right" class="part arm right"></div>
+        <div id="leg-left" class="part leg left"></div>
+        <div id="leg-right" class="part leg right"></div>
+      </div>
+    </div>
+
+    <p id="hint" class="hint"></p>
+    <p id="word-display" class="word"></p>
+
+    <input id="letter-input" type="text" maxlength="1" placeholder="Type a letter" />
+    <button onclick="submitGuess()">Guess</button>
+
+    <p id="message"></p>
+    <p id="attempts-left"></p>
+    <button onclick="restartGame()">🔁 Restart</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
